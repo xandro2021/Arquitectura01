@@ -1,7 +1,7 @@
 :root {
-    --blanco = #fff;
-    --negro = #111;
-    --gris = #343a40;
+    --blanco : #fff;
+    --negro : #111;
+    --gris : #343a40;
 
     --fuentePrincipal: "Raleway", sans-serif;
 }
@@ -73,4 +73,137 @@ img {
 
 .mt-5 {
     margin-top: 5rem;
+}
+
+/* HEADER */
+.header {
+    min-height: 60rem;
+    background-image: url("../img/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0px;
+}
+
+.contenido-header {
+    display: flex;
+    flex-direction: column;
+    height: calc(60rem - 4rem);
+    justify-content: space-between;
+    color: var(--blanco);
+}
+
+.nombre-sitio {
+    font-weight: 300;
+    text-align: center;
+    font-size: 3rem;
+}
+
+@media ( min-width: 768px ){
+    .nombre-sitio {
+        font-size: 5rem;
+    }
+}
+
+.nombre-sitio span {
+    font-weight: 900;
+}
+
+@media ( min-width: 768px ){
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media ( min-width: 768px ){
+    .contacto {
+        align-items: flex-end;
+    }
+}
+
+.telefono {
+    display: flex;
+}
+
+.telefono::before {
+    content: "";
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    background-image: url("../img/telefono.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 1rem;
+}
+
+.header a {
+    color: var(--blanco);
+    font-size: 2rem;
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+
+@media ( min-width: 768px ){
+    .navegacion {
+        flex-direction: row;
+    }
+}
+
+.navegacion a {
+    padding: 0.5rem;
+    transition: background-color 300ms;
+    width: 100%;
+    text-align: center;
+}
+
+@media ( min-width: 768px ){
+    .navegacion a {
+        padding: 1rem 2rem;
+    }
+}
+
+.navegacion a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: var(--negro);
+}
+
+.slogan {
+    text-align: center;
+}
+
+@media ( min-width: 768px ){
+    .slogan {
+        text-align: right;
+    }
+}
+
+.slogan h1 {
+    font-size: 3rem;
+    margin: 0px;
+}
+
+@media ( min-width: 768px ){
+    .slogan h1 {
+        font-size: 5rem;
+    }
+}
+
+.slogan p {
+    margin: 0px;
+    line-height: 1;
 }
