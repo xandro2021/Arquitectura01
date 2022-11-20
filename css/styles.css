@@ -306,3 +306,9 @@ img {
         padding: 2rem 2rem 2rem 0px;
     }
 }
+
+/* GALERIA */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat( 2, 1fr );
+}
